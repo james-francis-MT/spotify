@@ -1,4 +1,4 @@
-module github.com/james-francis-mt/text-editor
+module github.com/james-francis-mt/spotify
 
 go 1.24.2
 
