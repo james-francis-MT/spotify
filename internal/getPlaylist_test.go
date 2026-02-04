@@ -6,7 +6,7 @@ import (
 
 type testClient struct{}
 
-func (tc *testClient) search(_ string) []*Playlist {
+func (tc *testClient) Search(_ string) []*Playlist {
 	mockTracks := []*Track{NewTrack("track one"), NewTrack("track two")}
 	return []*Playlist{NewPlaylist("test playlist", mockTracks)}
 }
