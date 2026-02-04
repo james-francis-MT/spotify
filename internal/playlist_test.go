@@ -5,7 +5,8 @@ import (
 )
 
 func TestListTracks(t *testing.T) {
-	playlist := NewPlaylist("test", []*Track{NewTrack("track one"), NewTrack("track two")})
+	mockTracks := []*Track{NewTrack("track one"), NewTrack("track two")}
+	playlist := NewPlaylist("test", mockTracks)
 
 	trackString := playlist.ListTracks()
 
